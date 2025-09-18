@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* smooth scroll effect */
 }
 
 /* Container */
@@ -138,6 +138,11 @@ body {
 .section {
   padding: 4rem 0;
   text-align: center;
+  scroll-margin-top: 80px; /* prevents navbar from hiding content */
+}
+
+.hero {
+  scroll-margin-top: 80px; /* same fix for hero section */
 }
 
 .section h2 {
