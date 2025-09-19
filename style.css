@@ -196,7 +196,13 @@ html {
     scroll-padding-top: 140px;
   }
 
-  .hero, .section {
+  .hero,
+  .section {
     scroll-margin-top: 140px;
+  }
+
+  /* ✅ Extra spacing so titles don’t get stuck in blue bar */
+  .section h2 {
+    padding-top: 10px;
   }
 }
