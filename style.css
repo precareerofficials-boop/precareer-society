@@ -13,7 +13,7 @@ body {
 
 /* ✅ Global scroll padding (prevents navbar overlap) */
 html {
-  scroll-padding-top: 80px; /* default for desktop */
+  scroll-padding-top: 90px; /* default for desktop */
 }
 
 /* Container */
@@ -107,7 +107,7 @@ html {
   justify-content: center;
   text-align: center;
   color: #fff;
-  scroll-margin-top: 80px; /* ensure hero not hidden */
+  scroll-margin-top: 90px; /* ensure hero not hidden */
 }
 
 .hero::after {
@@ -144,7 +144,7 @@ html {
 .section {
   padding: 4rem 0;
   text-align: center;
-  scroll-margin-top: 80px; /* prevents navbar from hiding content */
+  scroll-margin-top: 90px; /* prevents navbar from hiding content */
 }
 
 .section h2 {
@@ -191,18 +191,18 @@ html {
     margin: 10px 0;
   }
 
-  /* ✅ Increase scroll padding on mobile (taller navbar) */
+  /* ✅ Increase scroll padding more for taller mobile navbar */
   html {
-    scroll-padding-top: 140px;
+    scroll-padding-top: 170px;
   }
 
   .hero,
   .section {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 170px;
   }
 
-  /* ✅ Extra spacing so titles don’t get stuck in blue bar */
+  /* ✅ Extra spacing for section titles */
   .section h2 {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
