@@ -11,9 +11,9 @@ body {
   scroll-behavior: smooth; /* smooth scroll effect */
 }
 
-/* Apply global scroll padding to prevent hidden section titles */
+/* ✅ Global scroll padding (prevents navbar overlap) */
 html {
-  scroll-padding-top: 100px; /* adjust based on navbar height */
+  scroll-padding-top: 80px; /* default for desktop */
 }
 
 /* Container */
@@ -107,7 +107,7 @@ html {
   justify-content: center;
   text-align: center;
   color: #fff;
-  scroll-margin-top: 100px; /* ensures hero is visible */
+  scroll-margin-top: 80px; /* ensure hero not hidden */
 }
 
 .hero::after {
@@ -144,7 +144,7 @@ html {
 .section {
   padding: 4rem 0;
   text-align: center;
-  scroll-margin-top: 100px; /* prevents navbar overlap */
+  scroll-margin-top: 80px; /* prevents navbar from hiding content */
 }
 
 .section h2 {
@@ -189,5 +189,14 @@ html {
 
   .nav-links li {
     margin: 10px 0;
+  }
+
+  /* ✅ Increase scroll padding on mobile (taller navbar) */
+  html {
+    scroll-padding-top: 140px;
+  }
+
+  .hero, .section {
+    scroll-margin-top: 140px;
   }
 }
